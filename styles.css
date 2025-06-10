@@ -1,0 +1,106 @@
+/* styles.css - external stylesheet for entire site */
+
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* General body styles */
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  color: #333;
+  background-color: #f9f9f9;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header styles */
+header {
+  background-color: #004080;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+  font-weight: 700;
+  font-size: 2em;
+}
+
+/* Navigation styles */
+nav {
+  background-color: #0066cc;
+  padding: 10px 0;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 5px 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover, nav ul li a:focus {
+  background-color: #004080;
+  outline: none;
+}
+
+/* Main content area */
+main {
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 15px;
+  background-color: white;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+  border-radius: 8px;
+}
+
+/* Section headers */
+h1, h2, h3 {
+  font-weight: 700;
+  color: #004080;
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+}
+
+/* Paragraphs */
+p {
+  line-height: 1.6;
+  margin-bottom: 1em;
+  color: #555;
+}
+
+/* Images */
+img {
+  max-width: 100%;
+  height: auto;
+  border: 2px solid #004080;
+  border-radius: 5px;
+  padding: 3px;
+  margin: 10px 0;
+}
+
+/* Footer styles */
+footer {
+  background-color: #004080;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+  margin-top: 30px;
+  font-size: 0.9em;
+}
+
+/* Utility classes */
+.text-center {
+  text-align: center;
+}
