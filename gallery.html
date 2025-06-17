@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Gallery - Brandon Leonard</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="wrapper">
+    <header>
+      <h1>My Gallery</h1>
+    </header>
+
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="gallery.html" class="active">Gallery</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <section class="gallery">
+        <h2>Snapshots of My World</h2>
+        <div class="gallery-grid">
+          <!-- Thumbnails with full-size links -->
+          <a href="cyberdesign.jpg" target="_blank">
+            <img src="cyberdesign.jpg" alt="Cyber Design" class="thumbnail"/>
+          </a>
+          <a href="gamingsetup.jpg" target="_blank">
+            <img src="gamingsetup.jpg" alt="Gaming Setup" class="thumbnail"/>
+          </a>
+          <a href="metalmusic.jpg" target="_blank">
+            <img src="metalmusic.jpg" alt="Metal Music" class="thumbnail"/>
+          </a>
+        </div>
+      </section>
+
+      <section class="media">
+        <h2>Featured Video</h2>
+        <!-- Embedded YouTube Video -->
+        <div class="video-wrapper">
+          <iframe width="560" height="315"
+                  src="https://www.youtube.com/embed/w-7xcpsuvpk?si=chSvOD0_umac2Ckb"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen>
+          </iframe>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Brandon Leonard</p>
+    </footer>
+  </div>
+</body>
+</html>
