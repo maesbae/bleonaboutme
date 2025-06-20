@@ -1,41 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Brandon</title>
-    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Contact Me - Brandon Leonard</title>
+    <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-    <div class="wrapper">
-        <header>
-            <h1>Contact Me</h1>
-        </header>
+    <header>
+        Contact Me
+    </header>
 
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html" class="active">Contact</a></li>
-                <li><a href="gallery.html">Gallery</a></li>
-            </ul>
-        </nav>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="interests.html">Interests</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
 
-        <main>
-            <section>
-                <h2>Get In Touch</h2>
-                <p>Reach out via the methods below—I’m always open to new projects or just geeking out over tech!</p>
-                <ul>
-                    <li>Email: <a href="mailto:bleonard2793@gmail.com">bleonard2793@gmail.com</a></li>
-                    <li>GitHub: <a href="https://github.com/maesbae" target="_blank">maesbae</a></li>
-                    <li>LinkedIn: <a href="#">https://www.linkedin.com/in/brandon-leonard-383893123/</a></li>
-                </ul>
-            </section>
-        </main>
+    <main>
+        <section>
+            <h1>Get in Touch</h1>
+            <p>If you'd like to reach out, feel free to fill out the form below!</p>
 
-        <footer>
-            <p>© 2025 Brandon Leonard</p>
-        </footer>
-    </div>
+            <form id="webForm" action="#">
+                <fieldset>
+                    <legend>Contact Form</legend>
+
+                    <label for="name">Name:</label><br/>
+                    <input type="text" id="name" name="name" required /><br/><br/>
+
+                    <label for="email">Email:</label><br/>
+                    <input type="text" id="email" name="email" required /><br/><br/>
+
+                    <label for="message">Message:</label><br/>
+                    <textarea id="message" name="message" rows="5" required></textarea><br/><br/>
+
+                    <p>Preferred Contact Method:</p>
+                    <label><input type="radio" name="contact_method" value="email" checked /> Email</label><br/>
+                    <label><input type="radio" name="contact_method" value="phone" /> Phone</label><br/><br/>
+
+                    <p>Topics You're Interested In:</p>
+                    <label><input type="checkbox" name="topics" value="webdesign" /> Web Design</label><br/>
+                    <label><input type="checkbox" name="topics" value="gaming" /> Gaming</label><br/>
+                    <label><input type="checkbox" name="topics" value="music" /> Metal Music</label><br/><br/>
+
+                    <label for="inquiryType">Type of Inquiry:</label><br/>
+                    <select id="inquiryType" name="inquiryType">
+                        <option value="general">General</option>
+                        <option value="feedback">Feedback</option>
+                        <option value="collab">Collaboration</option>
+                    </select><br/><br/>
+
+                    <input type="submit" value="Send Message" />
+                </fieldset>
+            </form>
+
+            <div id="output"></div>
+        </section>
+    </main>
+
+    <footer>
+        &copy; 2025 Brandon Leonard. All rights reserved.
+    </footer>
+
+    <!-- JavaScript to display form output -->
+    <script src="script.js"></script>
 </body>
 </html>
